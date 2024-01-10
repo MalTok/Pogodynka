@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+<head>
+    <title>Aktualna pogoda</title>
+</head>
+<body>
+<main layout:fragment="content">
+    <div class="weather-container">
+        <div class="div-block-container">
+            <div>
+                <div class="city-name">
+                    <p th:text="${cityName}">Stargard</p>
+                </div>
+                <div class="date-time">
+                    <p th:text="${#temporals.format(weather.dt, 'dd/MM/yyyy HH:mm:ss')}">09.01.2024 17:54:21</p>
+                </div>
+            </div>
+            <div class="div-row">
+                <div class="div-main-container">
+                    <p class="title">Szerokość geograficzna:</p>
+                    <p th:text="${weather.lat}">53.338</p>
+                </div>
+                <div class="div-main-container">
+                    <p class="title">Długość geograficzna:</p>
+                    <p th:text="${weather.lon}">15.035</p>
+                </div>
+            </div>
+            <div class="div-row">
+                <div class="div-main-container">
+                    <p class="title">Strefa czasowa:</p>
+                    <p th:text="${weather.timezone}">Europe/Warsaw</p>
+                </div>
+            </div>
+        </div>
+        <div class="div-block-container">
+            <div class="div-row">
+                <div class="div-main-container">
+                    <p class="title">Stan pogody:</p>
+                    <img th:src="${weather.imgUrl}" alt="Ikona obrazująca aktualny stan pogody">
+                    <p th:text="${weather.description}">bezchmurnie</p>
+                </div>
+                <div class="div-main-container">
+                    <div class="div-single-row">
+                        <i class="fa-solid fa-temperature-high fa-3x"></i>
+                        <p class="temp"><span th:text="${weather.temp}">-8.75</span>&#8451;</p>
+                    </div>
+                    <div class="div-single-row">
+                        <p class="temp-feel">Odczuwalna:</p>
+                        <p class="temp-feel"><span th:text="${weather.feelsLike}">-8.75</span>&#8451;</p>
+                    </div>
+                </div>
+            </div>
+            <div class="div-row">
+                <div class="div-main-container">
+                    <p class="title">Ciśnienie atmosferyczne:</p>
+                    <div class="div-single-row">
+                        <p th:text="${weather.pressure}">1041</p>
+                        <p>hPa</p>
+                    </div>
+                </div>
+                <div class="div-main-container">
+                    <p class="title">Wilgotność:</p>
+                    <div class="div-single-row">
+                        <p th:text="${weather.humidity}">85</p>
+                        <p>%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="div-block-container">
+            <div class="div-row">
+                <div class="div-main-container">
+                    <p class="title">Wschód słońca:</p>
+                    <p th:text="${#temporals.format(weather.sunrise, 'HH:mm:ss')}"></p>
+                </div>
+                <div class="div-main-container">
+                    <p class="title">Zachód słońca:</p>
+                    <p th:text="${#temporals.format(weather.sunset, 'HH:mm:ss')}"></p>
+                </div>
+            </div>
+        </div>
+        <div class="div-block-container">
+            <div class="div-row">
+                <div class="div-main-container">
+                    <p class="title">Prędkość wiatru:</p>
+                    <div class="div-single-row">
+                        <p th:text="${weather.windSpeed}">0.45</p>
+                        <p>m/s</p>
+                    </div>
+                </div>
+                <div class="div-main-container">
+                    <p class="title">Kierunek wiatru:</p>
+                    <div class="div-single-row">
+                        <p th:text="${weather.windDeg}">253</p>
+                        <p>&#176;</p>
+                    </div>
+                </div>
+                <div class="div-main-container">
+                    <p class="title">Porywy wiatru:</p>
+                    <div class="div-single-row">
+                        <p th:text="${weather.windGust}">0.33</p>
+                        <p>m/s</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="div-block-container">
+            <div class="div-row">
+                <div class="div-main-container">
+                    <p class="title">Zachmurzenie:</p>
+                    <div class="div-single-row">
+                        <p th:text="${weather.clouds}">5</p>
+                        <p>%</p>
+                    </div>
+                </div>
+                <div class="div-main-container">
+                    <p class="title">Widoczność:</p>
+                    <div class="div-single-row">
+                        <p th:text="${weather.visibility}">10000</p>
+                        <p>m</p>
+                    </div>
+                </div>
+                <div class="div-main-container">
+                    <p class="title">Index UV:</p>
+                    <p th:text="${weather.uvi}">0.47</p>
+                </div>
+                <div class="div-main-container">
+                    <p class="title">Temp. punktu rosy:</p>
+                    <div class="div-single-row">
+                        <p th:text="${weather.dewPoint}">-10.58</p>
+                        <p>&#8451;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>

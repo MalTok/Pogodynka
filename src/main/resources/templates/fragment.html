@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="https://www.thymeleaf.org">
+<body>
+<header th:fragment="header">
+    <div class="header">
+        <a th:href="@{/}" href="/" class="logo-link"><i class="fa-solid fa-cloud-sun fa-5x"></i></a>
+        <div>
+            <p class="app-name">POGODYNKA</p>
+            <p class="app-description">Twój profsjonalny serwis pogodowy</p>
+        </div>
+
+    </div>
+</header>
+<footer th:fragment="footer">
+    <div>
+        <div class="footer">
+            <div class="copy">
+                <span>&copy;2023 Wszystkie prawa zastrzeżone</span>
+            </div>
+            <div>
+                <a href="mailto:mig01@wp.pl">KONTAKT</a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

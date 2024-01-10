@@ -1,0 +1,137 @@
+.header,
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 120px;
+    width: 100%;
+    font-family: "Comic Sans MS", sans-serif;
+    font-weight: bolder;
+    background-image: linear-gradient(to left top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+.app-name {
+    font-size: xxx-large;
+}
+
+.app-description {
+    font-size: large;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    row-gap: 10px;
+    padding: 10px 0;
+    width: 100%;
+    min-height: 500px;
+    background-color: #ebe6ef;
+}
+
+.logo-link {
+    color: black;
+}
+
+.logo-link:hover {
+    color: #ba83ca;
+}
+
+.weather-container {
+    max-width: 500px;
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.div-block-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 350px;
+    border: grey solid thin;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.div-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    column-gap: 10px;
+    row-gap: 5px;
+    padding: 5px;
+}
+
+.div-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    height: min-content;
+    border: grey solid thin;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 4px;
+    background-color: #d8bfd8;
+}
+
+.div-single-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    column-gap: 2px;
+}
+
+.city-name {
+    font-size: xxx-large;
+    font-weight: bolder;
+}
+
+.date-time {
+    font-size: x-large;
+    font-weight: bolder;
+    color: #0085c3;
+}
+
+.temp {
+    font-size: xxx-large;
+}
+
+.temp-feel {
+    color: #0085c3;
+}
+
+.title {
+    font-size: large;
+    color: #54424b;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.error-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+
+.error {
+    color: red;
+}
