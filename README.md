@@ -15,7 +15,7 @@
 
   <p>
     A simple weather service
-<br />
+   <br />
     <a href="https://github.com/MalTok/Pogodynka"><strong>Explore the docs »</strong></a>
     <br />
     <br />
@@ -55,8 +55,15 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://github.com/MalTok/Pogodynka)
 
-This project is in fact a simple feature that fetches weather data from public API of https://openweathermap.org/api and displays this data in more visual friendly form.
+This project is in fact a simple feature that fetches weather data from public API of https://openweathermap.org/api and
+displays this data in more visual friendly form.
 Should be used along with an additional API for location search: https://openweathermap.org/api/geocoding-api
+
+<div style="display: flex; background-color: dimgray; justify-content: center; width: 200px">
+<a href="https://openweathermap.org">
+   <img style="height: 50px" src="images/owm_logo_white_cropped.png" alt="openweathermap logo"/>
+</a>
+</div>
 
 <p style="text-align: right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -77,7 +84,8 @@ Should be used along with an additional API for location search: https://openwea
 
 To get a local copy follow these simple steps below.
 
-IMPORTANT NOTE: Please get our own API KEY first - openweathermap.org is not free of charge, although currently there is a small limit of free requests per day for every account.
+IMPORTANT NOTE: Please get our own API KEY first - openweathermap.org is not free of charge, although currently there is
+a small limit of free requests per day for every account.
 
 ### Cloning
 
@@ -90,8 +98,9 @@ IMPORTANT NOTE: Please get our own API KEY first - openweathermap.org is not fre
    ```sh
    private static final String API_KEY = "enter_your_ke_here";
    ```
-   You can also change `UNITS` and `LANG`. 
-Read more [_here_](https://openweathermap.org/api/one-call-3#data) and [_here_](https://openweathermap.org/api/one-call-3#multi)
+   You can also change `UNITS` and `LANG`.
+   Read more [_here_](https://openweathermap.org/api/one-call-3#data) and [
+   _here_](https://openweathermap.org/api/one-call-3#multi)
 
 4. Launch app in your browser at: `localhost:8080` and enjoy!
 
@@ -109,9 +118,11 @@ Possibly you can implement this feature into your application like news service,
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any
+contributions you make are **greatly appreciated**.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also
+simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
@@ -133,19 +144,35 @@ Project Link: [https://github.com/MalTok/Pogodynka](https://github.com/MalTok/Po
 <p style="text-align: right">(<a href="#readme-top">back to top</a>)</p>
 
 [forks-shield]: https://img.shields.io/github/forks/MalTok/Pogodynka.svg?style=for-the-badge
+
 [forks-url]: https://github.com/MalTok/Pogodynka/network/members
+
 [stars-shield]: https://img.shields.io/github/stars/MalTok/Pogodynka.svg?style=for-the-badge
+
 [stars-url]: https://github.com/MalTok/Pogodynka/stargazers
+
 [issues-shield]: https://img.shields.io/github/issues/MalTok/Pogodynka.svg?style=for-the-badge
+
 [issues-url]: https://github.com/MalTok/Pogodynka/issues
+
 [product-screenshot]: images/pogodynka.png
-[Java.com]: https://www.java.com
-[Java-url]: https://img.shields.io/badge/Java-%23F80000?style=for-the-badge&logo=oracle
-[Maven.apache.org]: https://maven.apache.org
-[Maven-url]: https://img.shields.io/badge/Maven-%23C71A36?style=for-the-badge&logo=apachemaven&logoColor=black
-[Thymeleaf.org]: https://www.thymeleaf.org
-[Thymeleaf-url]: https://img.shields.io/badge/Thymeleaf-%23005F0F?style=for-the-badge&logo=thymeleafhttps://img.shields.io/badge/Thymeleaf-%23005F0F?style=for-the-badge&logo=thymeleaf
+
+[Java.com]: https://img.shields.io/badge/Java-%23F80000?style=for-the-badge&logo=oracle
+
+[Java-url]: https://www.java.com
+
+[Maven.apache.org]: https://img.shields.io/badge/Maven-%23C71A36?style=for-the-badge&logo=apachemaven&logoColor=black
+
+[Maven-url]: https://maven.apache.org
+
+[Thymeleaf.org]: https://img.shields.io/badge/Thymeleaf-%23005F0F?style=for-the-badge&logo=thymeleafhttps://img.shields.io/badge/Thymeleaf-%23005F0F?style=for-the-badge&logo=thymeleaf
+
+[Thymeleaf-url]: https://www.thymeleaf.org
+
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+
 [Bootstrap-url]: https://getbootstrap.com
-[Spring.io]: https://spring.io/projects/spring-boot
-[Spring-url]: https://img.shields.io/badge/Spring%20Boot-%236DB33F?style=for-the-badge&logo=springboot&logoColor=black
+
+[Spring.io]: https://img.shields.io/badge/Spring%20Boot-%236DB33F?style=for-the-badge&logo=springboot&logoColor=black
+
+[Spring-url]: https://spring.io/projects/spring-boot
