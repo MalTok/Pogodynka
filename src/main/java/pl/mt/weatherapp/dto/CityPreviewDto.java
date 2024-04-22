@@ -11,8 +11,12 @@ import java.math.BigDecimal;
 @EqualsAndHashCode
 public class CityPreviewDto {
     private String name;
+
     private BigDecimal lat;
+
     private BigDecimal lon;
+
     private String country;
+
     private String state;
 }

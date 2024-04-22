@@ -20,7 +20,8 @@
         <div th:if="${emptyMessage == true}">
             <p>Nie znaleziono takiego miasta. Spróbuj jeszcze raz.</p>
         </div>
-        <div th:unless="${emptyMessage == true}">
+        <div class="table-container" th:unless="${emptyMessage == true}">
+            <p>Wybierz miasto aby wyświetlić aktualną pogodę: </p>
             <div class="table-responsive-sm">
                 <table class="table">
                     <thead>

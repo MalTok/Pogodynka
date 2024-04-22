@@ -16,6 +16,7 @@ import java.util.stream.Collectors;
 
 @Service
 public class WeatherService {
+    /* get your own API key */
     private static final String API_KEY = "cd688285683b69eca4db403088d2d1e1";
     private static final int LIMIT = 5;
     private static final String EXCLUDE = "minutely,hourly,daily,alerts";
