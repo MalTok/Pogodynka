@@ -8,9 +8,14 @@ import java.util.Map;
 @Data
 public class CityResponseDto {
     private String name;
+
     private BigDecimal lat;
+
     private BigDecimal lon;
+
     private String country;
+
     private String state;
+
     private Map<String, String> localNames;
 }

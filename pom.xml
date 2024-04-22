@@ -11,8 +11,8 @@
     <groupId>pl.mt</groupId>
     <artifactId>weather</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ZADANIE_31_1</name>
-    <description>ZADANIE_31_1</description>
+    <name>Pogodynka</name>
+    <description>Pogodynka</description>
     <properties>
         <java.version>21</java.version>
     </properties>
