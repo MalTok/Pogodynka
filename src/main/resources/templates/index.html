@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+<head>
+    <title>Strona główna</title>
+</head>
+<body>
+<main layout:fragment="content">
+    <div class="search-bar">
+        <h2>Sprawdź pogodę w mieście:</h2>
+        <form th:action="@{/search}" method="post" th:object="${city}">
+            <label>
+                <input type="text" th:field="*{name}" placeholder="Warszawa">
+            </label>
+            <p th:errors="*{name}" class="error">Błąd nazwy miasta</p>
+            <button>SZUKAJ</button>
+        </form>
+    </div>
+    <div th:if="${mode == 'search'}">
+        <div th:if="${emptyMessage == true}">
+            <p>Nie znaleziono takiego miasta. Spróbuj jeszcze raz.</p>
+        </div>
+        <div th:unless="${emptyMessage == true}">
+            <div class="table-responsive-sm">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Nazwa</th>
+                        <th>Szerokość geo.</th>
+                        <th>Długość geo.</th>
+                        <th>Kraj</th>
+                        <th>Stan/województwo</th>
+                        <th>Wybierz</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="singleCity: ${cities}">
+                        <td th:text="${singleCity.name}">Stargard</td>
+                        <td th:text="${singleCity.lat}">53.338</td>
+                        <td th:text="${singleCity.lon}">15.035</td>
+                        <td th:text="${singleCity.country}">PL</td>
+                        <td th:text="${singleCity.state}">West Pomeranian Voivodeship</td>
+                        <td><a th:href="@{|/weather/result?name=${singleCity.name}&lat=${singleCity.lat}&lon=${singleCity.lon}|}">Wybierz</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
