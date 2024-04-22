@@ -145,7 +145,7 @@ Project Link: [https://github.com/MalTok/Pogodynka](https://github.com/MalTok/Po
 
 [forks-shield]: https://img.shields.io/github/forks/MalTok/Pogodynka.svg?style=for-the-badge
 
-[forks-url]: https://github.com/MalTok/Pogodynka/network/members
+[forks-url]: https://github.com/MalTok/Pogodynka/forks
 
 [stars-shield]: https://img.shields.io/github/stars/MalTok/Pogodynka.svg?style=for-the-badge
 
