@@ -110,7 +110,7 @@ a small limit of free requests per day for every account.
 
 ## Usage
 
-Possibly you can implement this feature into your application like news service, local website, blog.
+Possibly you can implement this feature in your application like news service, local website, blog.
 
 <p style="text-align: right">(<a href="#readme-top">back to top</a>)</p>
 
