@@ -61,7 +61,7 @@ Should be used along with an additional API for location search: https://openwea
 
 <div style="display: flex; background-color: black; justify-content: center; width: 200px">
 <a href="https://openweathermap.org">
-   <img style="height: 50px" src="images/owm_logo_white_cropped.png" alt="openweathermap logo"/>
+   <img style="height: 50px" src="images/owm_log.png" alt="openweathermap logo"/>
 </a>
 </div>
 
