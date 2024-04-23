@@ -6,12 +6,12 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<div style="text-align: center">
+<div style="display: flex; align-items: center; justify-content: center">
   <a href="https://github.com/MalTok/Pogodynka">
     <img src="images/logo.png" alt="Logo" width="800" height="632">
   </a>
 
-<h1 style="text-align: center">Pogodynka</h1>
+<h1>Pogodynka</h1>
 
   <p>
     A simple weather service
@@ -59,7 +59,7 @@ This project is in fact a simple feature that fetches weather data from public A
 displays this data in more visual friendly form.
 Should be used along with an additional API for location search: https://openweathermap.org/api/geocoding-api
 
-<div style="display: flex; background-color: dimgray; justify-content: center; width: 200px">
+<div style="display: flex; background-color: black; justify-content: center; width: 200px">
 <a href="https://openweathermap.org">
    <img style="height: 50px" src="images/owm_logo_white_cropped.png" alt="openweathermap logo"/>
 </a>
