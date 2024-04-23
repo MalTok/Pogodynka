@@ -6,7 +6,7 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<div style="display: flex; align-items: center; justify-content: center">
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center">
   <a href="https://github.com/MalTok/Pogodynka">
     <img src="images/logo.png" alt="Logo" width="800" height="632">
   </a>
