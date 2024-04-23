@@ -11,7 +11,7 @@
     <img src="images/logo.png" alt="Logo" width="800" height="632">
   </a>
 
-<h1 style="text-align: center">Pogodynka</h1>
+<h1>Pogodynka</h1>
 
   <p>
     A simple weather service
@@ -59,9 +59,9 @@ This project is in fact a simple feature that fetches weather data from public A
 displays this data in more visual friendly form.
 Should be used along with an additional API for location search: https://openweathermap.org/api/geocoding-api
 
-<div style="display: flex; background-color: dimgray; justify-content: center; width: 200px">
+<div>
 <a href="https://openweathermap.org">
-   <img style="height: 50px" src="images/owm_logo_white_cropped.png" alt="openweathermap logo"/>
+   <img style="height: 50px" src="images/owm_log.png" alt="openweathermap logo"/>
 </a>
 </div>
 
@@ -110,7 +110,7 @@ a small limit of free requests per day for every account.
 
 ## Usage
 
-Possibly you can implement this feature into your application like news service, local website, blog.
+Possibly you can implement this feature in your application like news service, local website, blog.
 
 <p style="text-align: right">(<a href="#readme-top">back to top</a>)</p>
 
