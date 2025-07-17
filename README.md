@@ -75,6 +75,7 @@ Should be used along with an additional API for location search: https://openwea
 - [![Thymeleaf][Thymeleaf.org]][Thymeleaf-url]
 - [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 - Lombok
+- Deployed on AWS ECR using [![Docker][Docker.com]][Docker-url]
 
 <p style="text-align: right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -188,3 +189,7 @@ Project Link: [https://github.com/MalTok/Pogodynka](https://github.com/MalTok/Po
 [Spring.io]: https://img.shields.io/badge/Spring%20Boot-%236DB33F?style=for-the-badge&logo=springboot&logoColor=black
 
 [Spring-url]: https://spring.io/projects/spring-boot
+
+[Docker.com]: https://img.shields.io/badge/Docker%20-%20%232496ED?style=for-the-badge&logo=Docker&logoColor=black
+
+[Docker-url]: https://docker.com
