@@ -106,6 +106,18 @@ a small limit of free requests per day for every account.
 
 <p style="text-align: right">(<a href="#readme-top">back to top</a>)</p>
 
+### Docker
+
+1. Pull the app from AWS ECR public registry using command line:
+   ```sh
+   docker pull public.ecr.aws/g9i5x3e8/pogodynka:0.0.1
+   ```
+2. Run a container:
+    ```sh
+   docker run -d -p 8080:8080 --name pogodynka public.ecr.aws/g9i5x3e8/pogodynka:0.0.1
+   ```
+3. Go to your browser and visit http://localhost:8080 and explore my app!
+
 <!-- USAGE EXAMPLES -->
 
 ## Usage
